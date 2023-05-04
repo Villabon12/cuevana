@@ -1,0 +1,756 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Peliculas para todos | Cine, series, tiempos de teatro y mucho mas</title>
+    <meta charset="utf-8" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="revisit-after" content="1 days" />
+    <meta
+      name="description"
+      content="Sebastian's | Sigue tus películas en línea, sin suscripciones. Un lugar más fácil para seguir en línea la actualidad de las películas más esperadas."
+    />
+    <meta
+      name="keywords"
+      content="Sebastian's, movies, online movie, movie online, movies online, follow movies online, follow hd movies, "
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="https://www.cuevana.be/" />
+    <meta property="og:locale" content="es" />
+    <meta
+      property="og:title"
+      content="Sebastian's | Películas, series, horarios de cine y mucho más"
+    />
+    <meta
+      property="og:description"
+      content="Sebastian's, movies, online movie, movie online, movies online, follow movies online, follow hd movies,"
+    />
+    <link rel="canonical" href="https://www.cuevana.be/" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Sebastian's | Películas, series, horarios de cine y mucho más"
+      href="/feed/rss"
+    />
+    <meta name="dailymotion-domain-verification" content="dme548bem309xhpvd" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "/#website",
+            "url": "/",
+            "name": "Sebastian's",
+            "description": "",
+            "inLanguage": "es",
+            "publisher": { "@id": "/#organization" },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "/search/{search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "/#organization",
+            "name": "Sebastian's",
+            "url": "/"
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "/#webpage",
+            "url": "/",
+            "name": "Sebastian's",
+            "isPartOf": { "@id": "/#website" },
+            "about": { "@id": "/#organization" },
+            "description": ""
+          }
+        ]
+      }
+    </script>
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#007AFF" />
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="shortcut icon"
+    href=/media/icono.png>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+      gtag("config", "");
+    </script>
+
+    <script>
+      var _mtm = (window._mtm = window._mtm || []);
+      _mtm.push({ "mtm.startTime": new Date().getTime(), event: "mtm.Start" });
+      var d = document,
+        g = d.createElement("script"),
+        s = d.getElementsByTagName("script")[0];
+      g.async = true;
+      g.src = "https://analytics.pop2watch.com/js/container_4UDabc2c.js";
+      s.parentNode.insertBefore(g, s);
+    </script>
+
+    <script type="text/javascript">
+      var _paq = (window._paq = window._paq || []);
+
+      // Custom permissions tracking
+      if ("Notification" in window)
+        _paq.push(["setCustomDimension", 1, Notification.permission]);
+      // Custom search tracking
+      var searchQuery = null;
+
+      var searchResultsCount = null;
+
+      if (searchQuery && searchResultsCount) {
+        _paq.push([
+          "trackSiteSearch",
+          searchQuery,
+          null,
+          parseInt(searchResultsCount),
+        ]);
+      }
+
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "https://analytics.pop2watch.com";
+        _paq.push(["setTrackerUrl", u + "/m"]);
+        _paq.push(["setSiteId", "26"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.src = u + "/foofoo.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4749918313287411"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      const forceConsentModal = true;
+      const privacyPolicyUrl = "/privacy-policy";
+    </script>
+    <script
+      defer
+      type="text/javascript"
+      src="{% static '/js/klaro_config.js'  %}"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdn.kiprotect.com/klaro/v0.7.18/klaro.js"
+    ></script>
+
+    <link rel="stylesheet" href="{% static 'css/star-ratings.css' %}" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+      integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="{% static '/css/lazy_load.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="{% static '/css/banners.css' %}" />
+
+    <link rel="stylesheet" href="{% static '/css/episode_select.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/bootstrap-5-iso-darkly.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/dashicons.min.css' %}"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/postratings-css.css' %}"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/peli-public.css' %}"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/custom.css' %}"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body class="slider">
+    <div id="aa-wp">
+      <header class="Header">
+        <div class="cont">
+          <div class="top dfx alg-cr jst-sb">
+            <figure class="logo">
+              <a href="/">
+                <img
+                  src="/media/cuevana.png"
+                  alt="logo"
+                />
+              </a>
+            </figure>
+            <span class="MenuBtn aa-tgl" data-tgl="aa-wp"
+              ><i class="fa fa-list"></i
+            ></span>
+            <span class="MenuBtnClose aa-tgl" data-tgl="aa-wp"></span>
+            <div class="Rght BgA dfxc alg-cr fg1">
+              <div class="Search">
+                <form method="get">
+                  <span class="Form-Icon">
+                    {{ form.as_p }}
+                   
+                    <button id="searchsubmit" type="submit">
+                      <i class="fa-search"></i>
+                    </button>
+                  </span>
+                </form>
+              </div>
+              <div class="login dfx">
+                <a href="/admin">
+                  <button type="button" class="Button link aa-mdl">
+                    Iniciar sesión
+                  </button>
+                </a>
+               
+              </div>
+              <nav class="Menu fg1">
+                <ul>
+                  <li
+                    id="menu-item-1953"
+                    class="AAIco-movie_creation menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1953 resp-menu"
+                  >
+                  <a href="#">Categoria</a>
+                  {% if genero %}
+                  <ul class="sub-menu">
+                    {% for generos in genero %}
+                    <li
+                      class="menu-item menu-item-type-taxonomy menu-item-object-category"
+                    >
+                      <a href="{{ generos.id}}">{{ generos.nombre}}</a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                </li>
+                  </li>
+                
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="bd">
+        <div class="MovieListSldCn">
+          <div class="MovieListSld owl-carousel owl-theme">
+            <div class="TPostMv item">
+              <div class="TPost D">
+                <a>
+                  <div class="Image">
+                    <figure class="Objf">
+                      <img
+                        src="https://image.tmdb.org/t/p/original//VlHt27nCqOuTnuX6bku8QZapzO.jpg"
+                        alt="Spider-Man: No Way Home"
+                      />
+                    </figure>
+                  </div>
+                </a>
+                <div class="TPMvCn">
+                  <a href="/24344-spider-man-no-way-home">
+                    <div class="Title">
+                      Spider-Man: No Way Home
+                      <span class="TpTv BgA"> Películas </span>
+                    </div>
+                  </a>
+                  <p class="Info">
+                    <span class="Vote">8,7</span>
+                    <span class="Time">148 min.</span>
+                    <span class="Date">2021</span>
+                    <span class="Qlty">HD</span>
+                  </p>
+                  <p></p>
+                  <p>
+                    Peter Parker es desenmascarado y por tanto no es capaz de
+                    separar su vida normal de los enormes riesgos que conlleva
+                    ser un súper héroe. Cuando pide ayuda a Doctor Strange, los
+                    riesgos pasan a ser aún más peligrosos, obligándole a
+                    descubrir lo que realmente significa ser Spider-Man.
+                  </p>
+                  <p></p>
+                  <a
+                    href="#"
+                    class="Button TPlay fa-play"
+                    >Ver</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="TPostMv item">
+              <div class="TPost D">
+                <a>
+                  <div class="Image">
+                    <figure class="Objf">
+                      <img
+                        src="https://image.tmdb.org/t/p/original//bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg"
+                        alt="Black Adam"
+                      />
+                    </figure>
+                  </div>
+                </a>
+                <div class="TPMvCn">
+                  <a href="/272595-black-adam">
+                    <div class="Title">
+                      Black Adam
+                      <span class="TpTv BgA"> Películas </span>
+                    </div>
+                  </a>
+                  <p class="Info">
+                    <span class="Vote">7,272</span>
+                    <span class="Time"> min.</span>
+                    <span class="Date">2021</span>
+                    <span class="Qlty">HD</span>
+                  </p>
+                  <p></p>
+                  <p>
+                    Long métrage adapté de DC Comics et consacré à Black Adam,
+                    l&#x27;ennemi de Shazam.
+                  </p>
+                  <p></p>
+                  <a href="#" class="Button TPlay fa-play"
+                    >Ver</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="TPostMv item">
+              <div class="TPost D">
+                <a>
+                  <div class="Image">
+                    <figure class="Objf">
+                      <img
+                        src="https://image.tmdb.org/t/p/original//AdyJH8kDm8xT8IKTlgpEC15ny4u.jpg"
+                        alt="Doctor Strange en el multiverso de la locura"
+                      />
+                    </figure>
+                  </div>
+                </a>
+                <div class="TPMvCn">
+                  <a href="#">
+                    <div class="Title">
+                      Doctor Strange en el multiverso de la locura
+                      <span class="TpTv BgA"> Películas </span>
+                    </div>
+                  </a>
+                  <p class="Info">
+                    <span class="Vote">7,6</span>
+                    <span class="Time">126 min.</span>
+                    <span class="Date">2022</span>
+                    <span class="Qlty">HD</span>
+                  </p>
+                  <p></p>
+                  <p>
+                    Viaja a lo desconocido con el Doctor Strange, quien, con la
+                    ayuda de tanto antiguos como nuevos aliados místicos,
+                    recorre las complejas y peligrosas realidades alternativas
+                    del multiverso para enfrentarse a un nuevo y misterioso
+                    adversario.
+                  </p>
+                  <p></p>
+                  <a
+                    href="#"
+                    class="Button TPlay fa-play"
+                    >Ver</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="TPostMv item">
+              <div class="TPost D">
+                <a>
+                  <div class="Image">
+                    <figure class="Objf">
+                      <img
+                        src="https://image.tmdb.org/t/p/original//2k9tBql5GYH328Krj66tDT9LtFZ.jpg"
+                        alt="La bestia"
+                      />
+                    </figure>
+                  </div>
+                </a>
+                <div class="TPMvCn">
+                  <a href="/315695-beast">
+                    <div class="Title">
+                      La bestia
+                      <span class="TpTv BgA"> Películas </span>
+                    </div>
+                  </a>
+                  <p class="Info">
+                    <span class="Vote">7,128</span>
+                    <span class="Time">93 min.</span>
+                    <span class="Date">2022</span>
+                    <span class="Qlty">HD</span>
+                  </p>
+                  <p></p>
+                  <p>
+                    El Doctor Nate Samuels, que se ha quedado viudo
+                    recientemente, regresa a Sudáfrica, lugar en el que conoció
+                    a su mujer, para visitar una reserva de animales con sus
+                    hijas. Pero lo que empieza siendo un viaje curativo se
+                    convierte en una lucha por la supervivencia cuando un león
+                    que ha escapado de unos cazadores furtivos empieza a
+                    seguirles.
+                  </p>
+                  <p></p>
+                  <a href="#" class="Button TPlay fa-play">Ver</a>
+                </div>
+              </div>
+            </div>
+            <div class="TPostMv item">
+              <div class="TPost D">
+                <a>
+                  <div class="Image">
+                    <figure class="Objf">
+                      <img
+                        src="https://image.tmdb.org/t/p/original//p1F51Lvj3sMopG948F5HsBbl43C.jpg"
+                        alt="Thor : Love and Thunder"
+                      />
+                    </figure>
+                  </div>
+                </a>
+                <div class="TPMvCn">
+                  <a href="/315663-thor-love-and-thunder">
+                    <div class="Title">
+                      Thor : Love and Thunder
+                      <span class="TpTv BgA"> Películas </span>
+                    </div>
+                  </a>
+                  <p class="Info">
+                    <span class="Vote">7,1</span>
+                    <span class="Time">119 min.</span>
+                    <span class="Date">2022</span>
+                    <span class="Qlty">HD</span>
+                  </p>
+                  <p></p>
+                  <p>
+                    Cuarta película sobre &quot;Thor&quot; del MCU, en la que el
+                    Dios del trueno contará con Lady Thor como acompañante,
+                    personaje que interpretará Natalie Portman.
+                  </p>
+                  <p></p>
+                  <a
+                    href="#"
+                    class="Button TPlay fa-play"
+                    >Ver</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-header">
+          <h2 class="section-title">Peliculas para todos</h2>
+        </div>
+
+        <div class="TpRwCont cont">
+          <main>
+            <section class="home-movies">
+              <div class="Top">
+                <h2 class="Title">Películas</h2>
+                
+              </div>
+              <div id="tab-1" class="apt">
+                  {% if movies %}
+                <ul class="MovieList Rows AX A06 B04 C03 E20">
+                    {% for movie in movies %}
+                  <li class="xxx TPostMv">
+                    <div
+                      class="TPost C post-7544 post type-post status-publish format-standard has-post-thumbnail hentry"
+                    >
+                    <a href="detalle/{{ movie.id }}">
+                      <div class="Image">
+                          <span class="Year">({{ movie.release_date.year }})</span>
+                          <figure class="Objf TpMvPlay AAIco-play_arrow">
+                            <img
+                              src="{{ movie.cover.url }}"
+                              alt="{{ movie.title }}"
+                              class=""
+                            />
+                          </figure>
+                        </div>
+                        <h2 class="Title">{{ movie.title }}</h2>
+                      </a>
+                      <div class="TPMvCn anmt">
+                        <div class="Title">{{ movie.title }}</div>
+                        <p class="Info">
+                          <span class="Vote AAIco-star">{{ movie.rating }}</span>
+                          <span class="Time AAIco-access_time">{{ movie.duracion }}</span>
+                          <span class="Date AAIco-date_range">{{ movie.ano }}</span>
+                          <span class="Qlty">HD</span>
+                        </p>
+                        <div class="Description">
+                          <p></p>
+                          <p>
+                            {{ movie.descripcion }}
+                          </p>
+                          <p></p>
+                          <p class="Director AAIco-videocam">
+                            <span>Director:</span> {{ movie.director }}
+                          </p>
+                          <p class="Genre AAIco-movie_creation">           
+                            {{ movie.categoria }}
+                          </p>
+                          
+                        </div>
+                        <img
+                          src="{{ movie.cover.url }}"
+                          alt="{{ movie.title }}"
+                          
+                          class="lazy attachment-thumbnail size-thumbnail wp-post-image bg"
+                        />
+                      </div>
+                    </div>
+                  </li>
+
+                  {% endfor %}
+                </ul>
+                {% endif %}
+                
+              </div>
+            </section>
+
+          </main>
+          <aside class="widget-area">
+
+            <div id="peli_top_estrenos-2" class="Wdgt peli_top_estrenos">
+              <div class="Title widget-title">Estrenos</div>
+              <div class="aa-cn">
+                <div id="aa-movies-2" class="aa-tb anm-e on">
+                  {% if estreno %}
+
+                  <ul class="MovieList">
+                    {% for dir in estreno %}
+
+                    <li>
+                      <div class="TPost A">
+                        <a href="detalle/{{ movie.id }}">
+                          <div class="Image">
+                            <figure class="Objf TpMvPlay AAIco-play_arrow">
+                              <img
+                                src="{{ dir.cover.url }}"
+                                alt="{{ dir.title }}"
+                                
+                                class=""
+                              />
+                            </figure>
+                          </div>
+                          <div class="Title">{{ dir.title }}</div>
+                        </a>
+                        <p class="Info">
+                          <span class="Vote AAIco-star">{{ dir.rating }}</span>
+                          <span class="Time AAIco-access_time">{{ dir.duracion }}</span>
+                          <span class="Date AAIco-date_range">{{ dir.ano }}</span>
+                          <span class="Qlty">HD</span>
+                        </p>
+                      </div>
+                    </li>
+                    {% endfor %}
+
+                  </ul>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            <div id="peli_movies-2" class="Wdgt peli_movies widget_languages">
+              <div class="Title widget-title">Películas recomendadas</div>
+              <div class="aa-cn">
+                <div id="aa-movies-2" class="aa-tb anm-e on">
+                  {% if recomendado %}
+                  <ul class="MovieList">
+                    {% for var in recomendado%}
+                    <li>
+                      <div class="TPost A">
+                        <a href="detalle/{{ movie.id }}">
+                          <div class="Image">
+                            <figure class="Objf TpMvPlay AAIco-play_arrow">
+                              <img
+                                src="{{ var.cover.url }}"
+                                alt="{{ var.title }}"
+                                class=""
+                              />
+                            </figure>
+                          </div>
+                          <div class="Title">{{ var.title }}</div>
+                        </a>
+                        <p class="Info">
+                          <span class="Vote AAIco-star">{{ var.rating }}</span>
+                          <span class="Time AAIco-access_time">{{ var.duracion }}</span>
+                          <span class="Date AAIco-date_range">{{ var.ano }}</span>
+                          <span class="Qlty">HD</span>
+                        </p>
+                      </div>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+      <footer class="ft ok">
+        <div class="cont dfxb alg-cr">
+          <figure class="logo-ft">
+            <img
+              src="/media/descarga.jpg"
+              alt="Sebastian's"
+            />
+          </figure>
+          <nav class="dfxb jst-sb fg1 alg-cr">
+            <ul class="mnft dfx jst-cr">
+              <li
+                id="menu-item-1990"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1990"
+              >
+                <a href="/terms-of-service">Condiciones de servicio</a>
+              </li>
+              <li
+                id="menu-item-1991"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1991"
+              >
+                <a href="/privacy-policy">Política de privacidad</a>
+              </li>
+              <li
+                id="menu-item-1995"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1995"
+              >
+                <a href="/contact/">Contacto</a>
+              </li>
+            </ul>
+            <ul class="smft dfx jst-cr">
+              <li>
+                <a
+                  href="/a?b=https%3A%2F%2Ftwitter.com%2F"
+                  class="fa-twitter fab"
+                  title="Twitter"
+                  target="_blank"
+                >
+                </a>
+              </li>
+              <li>
+                <a
+                  id="dm_subscribe"
+                  href="javascript:void(0);"
+                  class="fa-dailymotion fab"
+                ></a>
+                <script type="text/javascript">
+                  const dmApiKey = "b9dd2597034ef281a36e";
+                  const dmUserId = "x2fg30v";
+                  const dmButtonId = "dm_subscribe";
+                </script>
+               
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="copy tac">
+          © 2023 Sebastian's, Cine, series, tiempos de teatro y mucho mas
+        </p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+      integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+    <script type="text/javascript">
+      const LANGUAGE_CODE = "es";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/es.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="{% static '/js/star-ratings.min.js' %}"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js"></script>
+    <script src="{% static '/js/lazy_load_config.js' %}"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="{% static '/js/custom.js' %}"></script>
+  </body>
+</html>

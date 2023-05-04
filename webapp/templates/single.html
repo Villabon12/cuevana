@@ -1,0 +1,477 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Peliculas para todos | Cine, series, tiempos de teatro y mucho mas</title>
+    <meta charset="utf-8" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="revisit-after" content="1 days" />
+    <meta
+      name="description"
+      content="Sebastian's | Sigue tus películas en línea, sin suscripciones. Un lugar más fácil para seguir en línea la actualidad de las películas más esperadas."
+    />
+    <meta
+      name="keywords"
+      content="Sebastian's, movies, online movie, movie online, movies online, follow movies online, follow hd movies, "
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="https://www.cuevana.be/" />
+    <meta property="og:locale" content="es" />
+    <meta
+      property="og:title"
+      content="Sebastian's | Películas, series, horarios de cine y mucho más"
+    />
+    <meta
+      property="og:description"
+      content="Sebastian's, movies, online movie, movie online, movies online, follow movies online, follow hd movies,"
+    />
+    <link rel="canonical" href="https://www.cuevana.be/" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Sebastian's | Películas, series, horarios de cine y mucho más"
+      href="/feed/rss"
+    />
+    <meta name="dailymotion-domain-verification" content="dme548bem309xhpvd" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "/#website",
+            "url": "/",
+            "name": "Sebastian's",
+            "description": "",
+            "inLanguage": "es",
+            "publisher": { "@id": "/#organization" },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "/search/{search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "/#organization",
+            "name": "Sebastian's",
+            "url": "/"
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "/#webpage",
+            "url": "/",
+            "name": "Sebastian's",
+            "isPartOf": { "@id": "/#website" },
+            "about": { "@id": "/#organization" },
+            "description": ""
+          }
+        ]
+      }
+    </script>
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#007AFF" />
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="shortcut icon"
+    href=/media/icono.png>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+      gtag("config", "");
+    </script>
+
+    <script>
+      var _mtm = (window._mtm = window._mtm || []);
+      _mtm.push({ "mtm.startTime": new Date().getTime(), event: "mtm.Start" });
+      var d = document,
+        g = d.createElement("script"),
+        s = d.getElementsByTagName("script")[0];
+      g.async = true;
+      g.src = "https://analytics.pop2watch.com/js/container_4UDabc2c.js";
+      s.parentNode.insertBefore(g, s);
+    </script>
+
+    <script type="text/javascript">
+      var _paq = (window._paq = window._paq || []);
+
+      // Custom permissions tracking
+      if ("Notification" in window)
+        _paq.push(["setCustomDimension", 1, Notification.permission]);
+      // Custom search tracking
+      var searchQuery = null;
+
+      var searchResultsCount = null;
+
+      if (searchQuery && searchResultsCount) {
+        _paq.push([
+          "trackSiteSearch",
+          searchQuery,
+          null,
+          parseInt(searchResultsCount),
+        ]);
+      }
+
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "https://analytics.pop2watch.com";
+        _paq.push(["setTrackerUrl", u + "/m"]);
+        _paq.push(["setSiteId", "26"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.src = u + "/foofoo.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4749918313287411"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      const forceConsentModal = true;
+      const privacyPolicyUrl = "/privacy-policy";
+    </script>
+    <script
+      defer
+      type="text/javascript"
+      src="{% static '/js/klaro_config.js'  %}"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdn.kiprotect.com/klaro/v0.7.18/klaro.js"
+    ></script>
+
+    <link rel="stylesheet" href="{% static 'css/star-ratings.css' %}" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+      integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="{% static '/css/lazy_load.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="{% static '/css/banners.css' %}" />
+
+    <link rel="stylesheet" href="{% static '/css/episode_select.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/bootstrap-5-iso-darkly.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/dashicons.min.css' %}"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/postratings-css.css' %}"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/peli-public.css' %}"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/custom.css' %}"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static '/css/style2.css' %}"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body class="slider">
+    <div id="aa-wp">
+      <header class="Header">
+        <div class="cont">
+          <div class="top dfx alg-cr jst-sb">
+            <figure class="logo">
+              <a href="/">
+                <img
+                  src="/media/cuevana.png"
+                  alt="logo"
+                />
+              </a>
+            </figure>
+            <span class="MenuBtn aa-tgl" data-tgl="aa-wp"
+              ><i class="fa fa-list"></i
+            ></span>
+            <span class="MenuBtnClose aa-tgl" data-tgl="aa-wp"></span>
+            <div class="Rght BgA dfxc alg-cr fg1">
+              <div class="Search">
+                <form method="get">
+                  <span class="Form-Icon">
+                    {{ form.as_p }}
+                   
+                    <button id="searchsubmit" type="submit">
+                      <i class="fa-search"></i>
+                    </button>
+                  </span>
+                </form>
+              </div>
+              <div class="login dfx">
+                <a href="/admin">
+                  <button type="button" class="Button link aa-mdl">
+                    Iniciar sesión
+                  </button>
+                </a>
+               
+              </div>
+              <nav class="Menu fg1">
+                <ul>
+                  <li
+                    id="menu-item-1953"
+                    class="AAIco-movie_creation menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1953 resp-menu"
+                  >
+                  <a href="#">Categoria</a>
+                  {% if genero %}
+                  <ul class="sub-menu">
+                    {% for generos in genero %}
+                    <li
+                      class="menu-item menu-item-type-taxonomy menu-item-object-category"
+                    >
+                      <a href="../{{ generos.id}}">{{ generos.nombre}}</a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                </li>
+                  </li>
+                  
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="bd">
+
+        <div class="section-header">
+          <h2 class="section-title">Detalle</h2>
+        </div>
+
+        <div class="TpRwCont cont">
+          <main>
+            <section class="home-movies">
+             
+              <article class="TPost movtv-info cont">
+                <div class="Image">
+                  <img alt="{{ pelicula.title }}" layout="intrinsic" srcSet="{{ pelicula.cover.url }} 1x, {{ pelicula.cover.url }} 2x" src="{{ pelicula.cover.url }}" width="200" height="300" decoding="async" data-nimg="future" style="color:transparent" />
+                </div>
+                <header>
+                  <h1 class="Title">{{ pelicula.title }}</h1>
+                  <span class="SubTitle"> <!-- -->{{ pelicula.descripcion }}
+                    <!-- --> </span>
+                </header>
+                <footer>
+                  <div class="VotesCn">
+                    <div class="Prct">
+                      <div id="TPVotes" data-percent="0" class="percircle animate gt50">
+                        <div class="slice">
+                          <div class="bar" style="transform:rotate(0deg)"></div>
+                            <div class="fill"></div></div><span>{{ pelicula.rating }}</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="meta"><span>{{ pelicula.duracion }}</span><span>{{ pelicula.ano }}</span></p>
+                    </div>
+                  </div>
+                </footer>
+            </article>
+
+              <div class="TpRwCont cont">
+                <main>
+                  <section>
+                    <div class="Top">
+                      <h2 class="omt Title">Películas similar a 
+                          <!-- -->{{ pelicula.title }}
+                      </h2>
+                    </div>
+                      {% if peliculas_recomendadas %}
+
+                    <ul class="MovieList Rows">
+                      {% for pelicula_recomendada in peliculas_recomendadas %}
+
+                      <li class="TPostMv">
+                        <div class="TPost C hentry">
+                            <a href="/detalle/{{ pelicula_recomendada.id }}">
+                              <div class="Image"><span class="Year">{{ pelicula_recomendada.ano }}</span>
+                                <img layout="intrinsic" alt="{{ pelicula_recomendada.title }}" srcSet="{{ pelicula_recomendada.cover.url }} 1x, {{ pelicula_recomendada.cover.url }} 2x" src="{{ pelicula_recomendada.cover.url }}" width="178" height="267" decoding="async" 
+                                  data-nimg="future" loading="lazy" style="color:transparent;background-size:cover;background-position:50% 50%;background-repeat:no-repeat;background-image:url(&quot;data:image/svg+xml;charset=utf-8,%3Csvg xmlns=&#x27;http%3A//www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 178 267&#x27;%3E%3Cfilter id=&#x27;b&#x27; color-interpolation-filters=&#x27;sRGB&#x27;%3E%3CfeGaussianBlur stdDeviation=&#x27;20&#x27;/%3E%3C/filter%3E%3Cimage filter=&#x27;url(%23b)&#x27; x=&#x27;0&#x27; y=&#x27;0&#x27; height=&#x27;100%25&#x27; width=&#x27;100%25&#x27; href=&#x27;data:image/gif;base64,R0lGODlhAQABAPAAAAIJIv///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==&#x27;/%3E%3C/svg%3E&quot;)" />
+                              </div>
+                              <span class="Title block">{{ pelicula_recomendada.title }}</span>
+                            </a>
+                        </div>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+
+                  </section>
+                </main>
+              </div>
+              
+            </section>
+          </main>
+
+        </div>
+      </div>
+
+      <footer class="ft ok">
+        <div class="cont dfxb alg-cr">
+          <figure class="logo-ft">
+            <img
+              src="/media/descarga.jpg"
+              alt="Sebastian's"
+            />
+          </figure>
+          <nav class="dfxb jst-sb fg1 alg-cr">
+            <ul class="mnft dfx jst-cr">
+              <li
+                id="menu-item-1990"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1990"
+              >
+                <a href="/terms-of-service">Condiciones de servicio</a>
+              </li>
+              <li
+                id="menu-item-1991"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1991"
+              >
+                <a href="/privacy-policy">Política de privacidad</a>
+              </li>
+              <li
+                id="menu-item-1995"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1995"
+              >
+                <a href="/contact/">Contacto</a>
+              </li>
+            </ul>
+            <ul class="smft dfx jst-cr">
+              <li>
+                <a
+                  href="/a?b=https%3A%2F%2Ftwitter.com%2F"
+                  class="fa-twitter fab"
+                  title="Twitter"
+                  target="_blank"
+                >
+                </a>
+              </li>
+              <li>
+                <a
+                  id="dm_subscribe"
+                  href="javascript:void(0);"
+                  class="fa-dailymotion fab"
+                ></a>
+                <script type="text/javascript">
+                  const dmApiKey = "b9dd2597034ef281a36e";
+                  const dmUserId = "x2fg30v";
+                  const dmButtonId = "dm_subscribe";
+                </script>
+               
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="copy tac">
+          © 2023 Cuevana, Cine, series, tiempos de teatro y mucho mas
+        </p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+      integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+    <script type="text/javascript">
+      const LANGUAGE_CODE = "es";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/es.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="{% static '/js/star-ratings.min.js' %}"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js"></script>
+    <script src="{% static '/js/lazy_load_config.js' %}"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="{% static '/js/custom.js' %}"></script>
+  </body>
+</html>
